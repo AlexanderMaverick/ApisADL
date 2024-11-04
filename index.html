@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Monedas Nacional</h1>
+        <div class="converter">
+            <label for="amount">Ingrese la cantidad en pesos chilenos (CLP):</label>
+            <input type="number" id="amount" placeholder="Ej: 10000">
+            <label for="fiatSelector">Seleccione la moneda a convertir:</label>
+            <select name="fiat" id="fiatSelector">
+            </select>
+            <button id="convertButton">Convertir</button>
+            <p id="result"></p>
+        </div>
+        <div class="chart-container">
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
